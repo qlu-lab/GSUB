@@ -4,7 +4,7 @@ GSUB (Gwas-by-SUBtraction) is a command line tool to perform GWAS-by-subtraction
 ![GSUB workflow](https://github.com/svdorn/GSUB/blob/main/figures/GSUB_general_workflow.png)
 
 ## Manual
-Please see the [wiki](https://github.com/svdorn/GSUB/wiki) for the detailed manual of `GSUB`.
+Please see the [wiki](https://github.com/qlu-lab/GSUB/wiki) for the detailed manual of `GSUB`.
 
 ## Version History
 * September 19, 2023: Initial release.
