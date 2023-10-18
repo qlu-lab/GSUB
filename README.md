@@ -10,8 +10,8 @@ Please see the [wiki](https://github.com/qlu-lab/GSUB/wiki) for the detailed man
 * September 19, 2023: Initial release.
 
 ## Citation
-If you use GSUB, please cite:
-Coming soon...
+If you use GSUB, please cite:    
+Wu et al. (2023). [Pervasive biases in proxy GWAS based on parental history of Alzheimer's disease](https://www.biorxiv.org/content/10.1101/2023.10.13.562272v1). *bioRxiv* 2023.10.13.562272.
 
 ## Contact
 For questions and comments, please open a Github issue (preferred) or contact Yuchang Wu at [ywu423@wisc.edu](mailto:ywu423@wisc.edu) or Stephen Dorn at [svdorn@wisc.edu](mailto:svdorn@wisc.edu).
