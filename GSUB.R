@@ -26,7 +26,7 @@ if (!require(GenomicSEM)) {
 # Read the arguments into R
 option_list <- list(
   # required
-  make_option("--sumstat_path", action = "store", default = NULL, type = "character"),
+  make_option("--sumstat_files", action = "store", default = NULL, type = "character"),
   make_option("--output_path", action = "store", default = NULL, type = "character"),
   make_option("--correction", action = "store", default = "standard", type = "character"),
   # optional
@@ -48,7 +48,7 @@ option_list <- list(
 ### step 0. specify the inputs: ============
 opt <- parse_args(OptionParser(option_list=option_list))
 # Required inputs
-sumstats_file <- c(list.files(opt$sumstat_path, full.names = TRUE))
+sumstats_file <- as.character(unlist(strsplit(opt$sumstat_files, split = ",")))
 num_sumstats_files <- length(sumstats_file)
 # throw error if the number of sumstats files provided isn't 2
 if (num_sumstats_files != 2) {
@@ -95,7 +95,7 @@ sample.prev <- get_vector_option(opt$sample.prev, "numeric", NA) # default is NA
 population.prev <- get_vector_option(opt$population.prev, "numeric", NA) # default is NA
 # settings for cleaning and reformatting sumstats
 se.logit <- get_vector_option(opt$se.logit, "logical", TRUE) # default is TRUE
-OLS <- get_vector_option(opt$OLD, "logical", FALSE) # default is FALSE
+OLS <- get_vector_option(opt$OLS, "logical", FALSE) # default is FALSE
 linprob <- get_vector_option(opt$linprob, "logical", FALSE) # default is FALSE
 # references and resources - in most cases users should use the defaults
 hm3 <- opt$hm3
@@ -109,7 +109,6 @@ keep.indel <- opt$keep.indel # default is FALSE
 # sumstats files
 parallel <- TRUE
 cores <- 2
-
 
 ### step 1. munge sumstats: ===================
 #
