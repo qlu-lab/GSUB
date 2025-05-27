@@ -11,7 +11,7 @@ Please see the [wiki](https://github.com/qlu-lab/GSUB/wiki) for the detailed man
 
 ## Citation
 If you use GSUB, please cite:    
-Wu et al. (2024). [Pervasive biases in proxy genome-wide association studies based on parental history of Alzheimer’s disease](https://www.nature.com/articles/s41588-024-01963-9). *Nature Genetics*, https://doi.org/10.1038/s41588-024-01963-9.
+Wu et al. (2024). Pervasive biases in proxy genome-wide association studies based on parental history of Alzheimer’s disease. *Nature Genetics*, 56(12), 2696–2703. https://doi.org/10.1038/s41588-024-01963-9
 
 ## Contact
 For questions and comments, please open a Github issue (preferred) or contact Yuchang Wu at [ywu423@wisc.edu](mailto:ywu423@wisc.edu) or Stephen Dorn at [svdorn@wisc.edu](mailto:svdorn@wisc.edu).
